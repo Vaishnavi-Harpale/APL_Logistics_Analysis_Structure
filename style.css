@@ -1,0 +1,262 @@
+/* =====================================================
+   APL Logistics Dashboard
+   Professional Dashboard Theme
+===================================================== */
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global */
+html,
+body,
+[class*="css"]{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Background */
+.stApp{
+    background-color:#F5F7FB;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"]{
+    background:#1F2937;
+    color:white;
+    border-right:2px solid #2563EB;
+}
+
+/* Sidebar Text */
+section[data-testid="stSidebar"] *{
+    color:white;
+}
+
+/* Header */
+.dashboard-title{
+    font-size:34px;
+    font-weight:700;
+    color:#1F2937;
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.dashboard-subtitle{
+    font-size:17px;
+    text-align:center;
+    color:#6B7280;
+    margin-bottom:30px;
+}
+
+/* KPI Cards */
+.kpi-card{
+    background:white;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:0px 6px 18px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    border-left:6px solid #2563EB;
+}
+
+.kpi-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0px 12px 24px rgba(0,0,0,0.12);
+}
+
+.kpi-title{
+    font-size:15px;
+    font-weight:600;
+    color:#6B7280;
+}
+
+.kpi-value{
+    font-size:30px;
+    font-weight:700;
+    color:#2563EB;
+}
+
+/* Section Headings */
+.section-title{
+    font-size:24px;
+    font-weight:700;
+    color:#1F2937;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+/* Containers */
+.block-container{
+    padding-top:2rem;
+    padding-bottom:2rem;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+/* Metric Cards */
+div[data-testid="metric-container"]{
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    border:1px solid #E5E7EB;
+    box-shadow:0px 5px 12px rgba(0,0,0,0.08);
+}
+
+/* Tables */
+thead tr th{
+    background:#2563EB !important;
+    color:white !important;
+    text-align:center;
+}
+
+tbody tr:nth-child(even){
+    background:#F9FAFB;
+}
+
+/* Dataframe */
+[data-testid="stDataFrame"]{
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid #E5E7EB;
+}
+
+/* Buttons */
+.stButton>button{
+    width:100%;
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:10px;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.stButton>button:hover{
+    background:#1D4ED8;
+    transform:scale(1.02);
+}
+
+/* Download Button */
+.stDownloadButton>button{
+    background:#16A34A;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:10px;
+    font-weight:600;
+}
+
+.stDownloadButton>button:hover{
+    background:#15803D;
+}
+
+/* Select Box */
+.stSelectbox{
+    margin-bottom:12px;
+}
+
+/* Multi Select */
+.stMultiSelect{
+    margin-bottom:12px;
+}
+
+/* Slider */
+.stSlider{
+    margin-bottom:12px;
+}
+
+/* Radio */
+.stRadio{
+    margin-bottom:12px;
+}
+
+/* Chart Container */
+.chart-card{
+    background:white;
+    border-radius:18px;
+    padding:18px;
+    box-shadow:0px 5px 12px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+}
+
+/* Info Box */
+.info-box{
+    background:#DBEAFE;
+    border-left:6px solid #2563EB;
+    padding:18px;
+    border-radius:10px;
+    color:#1E3A8A;
+}
+
+/* Success Box */
+.success-box{
+    background:#DCFCE7;
+    border-left:6px solid #16A34A;
+    padding:18px;
+    border-radius:10px;
+}
+
+/* Warning Box */
+.warning-box{
+    background:#FEF3C7;
+    border-left:6px solid #F59E0B;
+    padding:18px;
+    border-radius:10px;
+}
+
+/* Danger Box */
+.danger-box{
+    background:#FEE2E2;
+    border-left:6px solid #DC2626;
+    padding:18px;
+    border-radius:10px;
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+    font-size:14px;
+    color:#6B7280;
+    margin-top:40px;
+    padding:15px;
+    border-top:1px solid #E5E7EB;
+}
+
+/* Horizontal Rule */
+hr{
+    border:none;
+    border-top:1px solid #D1D5DB;
+}
+
+/* Hide Streamlit Menu */
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+header{
+    visibility:hidden;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.dashboard-title{
+    font-size:26px;
+}
+
+.kpi-value{
+    font-size:22px;
+}
+
+.section-title{
+    font-size:20px;
+}
+
+.block-container{
+    padding:1rem;
+}
+
+}
