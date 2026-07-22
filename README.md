@@ -237,7 +237,7 @@ The application generates:
 
 # 👨‍💻 Author
 
-**Your Name**
+**Vaishnavi Harpale**
 
 Data Analyst Project
 
